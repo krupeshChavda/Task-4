@@ -1,0 +1,130 @@
+.shared-input {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.shared-input__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+}
+
+.shared-input__required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+.shared-input__field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  color: #374151;
+}
+
+.shared-input__field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.shared-input__field:hover {
+  border-color: #9ca3af;
+}
+
+.shared-input__input {
+  height: 3rem;
+}
+
+.shared-input__textarea {
+  min-height: 6rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.shared-input__checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.shared-input--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.shared-input--checkbox .shared-input__label {
+  margin-bottom: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.shared-input__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.shared-input__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.shared-input__radio-label:hover {
+  background-color: #f9fafb;
+}
+
+.shared-input__radio {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #3b82f6;
+}
+
+.shared-input__radio-text {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .shared-input__label {
+    color: #f3f4f6;
+  }
+  
+  .shared-input__field {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+  }
+  
+  .shared-input__field:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+  }
+  
+  .shared-input__field:hover {
+    border-color: #6b7280;
+  }
+  
+  .shared-input__radio-label:hover {
+    background-color: #374151;
+  }
+  
+  .shared-input__radio-text {
+    color: #f3f4f6;
+  }
+}
